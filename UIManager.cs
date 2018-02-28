@@ -21,7 +21,7 @@ public class UIManager : MonoBehaviour {
 
 
 	void Start () {
-		Time.timeScale = 1;                                                     // default game state: running
+        Time.timeScale = 1;                                                     // default game state: running
 		pauseObjects = GameObject.FindGameObjectsWithTag("ShowOnPause");        // collecting all gameObjects that should only be displayed when game is paused by tag
 		hidePaused();                                                           // hide said elements
 	}
@@ -73,6 +73,7 @@ public class UIManager : MonoBehaviour {
 	public void LoadLevel(string level){
         //if in title screen set player names
         if (SceneManager.GetActiveScene().name == "TitleScreen"){
+            PlayerPrefs.DeleteAll();
             setNames();
 		}
 
@@ -85,7 +86,7 @@ public class UIManager : MonoBehaviour {
 		nameP1 = GameObject.Find("TextP2").GetComponent<Text>().text;
         PlayerPrefs.SetString( "nameP1", nameP1);
 		PlayerPrefs.SetString( "nameP2", nameP2);
-        print(PlayerPrefs.GetString("nameP2", "Player2"));
+        //print(PlayerPrefs.GetString("nameP2", "Player2"));
 	}
 
     // quits application - called by other scripts

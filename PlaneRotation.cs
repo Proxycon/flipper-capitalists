@@ -16,7 +16,8 @@ public class PlaneRotation : MonoBehaviour {
 
 
     void Update()
-    {
+    {   
+        // detects rotation mode (standard [hardcoded pattern] or random [random pattern])
         if (rotateStandard)
         {
             int s = timer.GetComponent<Timer>().getTime();

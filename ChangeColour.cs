@@ -24,9 +24,6 @@ public class ChangeColour : MonoBehaviour {
 
     private void OnCollisionEnter(Collision col)
     {
-        AudioSource audio = gameObject.AddComponent<AudioSource>() as AudioSource;
-        audio.PlayOneShot(Resources.Load("cash_register.mp3") as AudioClip, 1.0f);
-
         if (col.collider.name == "ball_1(Clone)")   // if hit by shot from player 1:
         {
             print("Player1 hit building");  
@@ -55,17 +52,22 @@ public class ChangeColour : MonoBehaviour {
 
     private void Update()
     {
-        // generating points for player 1
-        if (karmaLevel > 0){
-            print("adding point to " + p1.name);
-            pointsPlayer1 += buildingValue;
-            p1.GetComponent<PlayerPoints>().addPoints(buildingValue);
+        if (Time.timeScale == 1)
+        {
+            // generating points for player 1
+            if (karmaLevel > 0)
+            {
+                print("adding point to " + p1.name);
+                pointsPlayer1 += buildingValue;
+                p1.GetComponent<PlayerPoints>().addPoints(buildingValue);
 
-        }
-        // generating points for player 2
-        if (karmaLevel < 0){
-            pointsPlayer2 += buildingValue;
-            p2.GetComponent<PlayerPoints>().addPoints(buildingValue);
+            }
+            // generating points for player 2
+            if (karmaLevel < 0)
+            {
+                pointsPlayer2 += buildingValue;
+                p2.GetComponent<PlayerPoints>().addPoints(buildingValue);
+            }
         }
     }
 
