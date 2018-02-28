@@ -26,8 +26,8 @@ GAME STORY:
 
 INSPIRATION FROM OTHER GAMES:
 
-	Windows Pinball: https://www.youtube.com/watch?v=uMZwb05pPnI"}}{\fldrslt https://www.youtube.com/watch?v=uMZwb05pPnI
-	Katamari Damacy: https://www.youtube.com/watch?v=PVVW41iAu5A&t=1284s"}}{\fldrslt https://www.youtube.com/watch?v=PVVW41iAu5A&t=1284s
+	Windows Pinball: https://www.youtube.com/watch?v=uMZwb05pPnI 	https://www.youtube.com/watch?v=uMZwb05pPnI
+	Katamari Damacy: https://www.youtube.com/watch?v=PVVW41iAu5A&t=1284s	https://www.youtube.com/watch?v=PVVW41iAu5A&t=1284s
 
 TECHNOLOGY INFORMATION:
 	
